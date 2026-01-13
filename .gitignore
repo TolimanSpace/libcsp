@@ -16,6 +16,7 @@ tags
 .DS_store
 *.pdf
 *.html
+.direnv
 builddir
 .settings
 *~

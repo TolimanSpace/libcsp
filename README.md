@@ -1,5 +1,22 @@
 ![CI Status](https://github.com/libcsp/libcsp/actions/workflows/build-test.yml/badge.svg)
 
+Toliman-related info
+--------------------
+
+This is a fork of the libcsp library, with some modifications to make it work with Toliman. The main changes are:
+- Added a nix environment (`shell.nix` and `.envrc`) to easily set up the environment for building. Make sure you have Nix and direnv installed to make use of this.
+- Fixed a single debug warning that prevented compiling in -Werror mode
+- Modified the Python bindings to be compatible with Python 3.11
+
+Compiling:
+```
+# Configure
+./waf configure --enable-python3-bindings --enable-shlib --prefix=$out --install-csp --enable-if-zmqhub --enable-can-socketcan --with-driver-usart=linux
+
+# Build
+./waf build
+```
+
 # The Cubesat Space Protocol
 
 Cubesat Space Protocol (CSP) is a small protocol stack written in C. CSP
