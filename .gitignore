@@ -17,3 +17,11 @@ tags
 *.pdf
 *.html
 .direnv/
+builddir
+.settings
+*~
+GPATH
+GRTAGS
+GTAGS
+.vscode/
+build-docs
